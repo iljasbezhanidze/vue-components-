@@ -5,7 +5,7 @@
         v-for="(item, index) in pages" 
         :key="index"
         @click="currentPage = index + 1"
-        >{{index + 1}}
+        >{{ index + 1 }}
       </button>
       <button @click="nextPage()">Вперед</button>
       <p>Сторінка {{ currentPage }} з {{ pages }}</p>
