@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import myComponents from './components/mySearch'
+import myComponents from './education/myImageEditor'
 
 export default {
   name: 'App',
