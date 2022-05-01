@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import myComponents from './education/myImageEditor'
+import myComponents from './components/myToDoList'
 
 export default {
   name: 'App',
