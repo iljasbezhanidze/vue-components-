@@ -1,15 +1,15 @@
 <template>
   <div class="arrays">
-    <button v-on:click="addItem">Додати</button>
-    <button v-on:click="removeItem">Видалити</button>
-    <button v-on:click="reverseItem">Перевернути</button>
-    <button v-on:click="sortItem">Сортувати</button>
-    <button v-on:click="shuffleItem">Перемішати</button>
-    <button v-on:click="evenItem">Лише парні</button>
-    <button v-on:click="oddItem">Лише непарні</button>
-    <button v-on:click="multiplyItem">Піднести до степеня</button>
-    <button v-on:click="divideItem">Навпіл</button>
-    <button v-on:click="clearList">Очистити</button>
+    <button @click="addItem">Додати</button>
+    <button @click="removeItem">Видалити</button>
+    <button @click="reverseItem">Перевернути</button>
+    <button @click="sortItem">Сортувати</button>
+    <button @click="shuffleItem">Перемішати</button>
+    <button @click="evenItem">Лише парні</button>
+    <button @click="oddItem">Лише непарні</button>
+    <button @click="multiplyItem">Піднести до степеня</button>
+    <button @click="divideItem">Навпіл</button>
+    <button @click="clearList">Очистити</button>
     <ul>
       <li v-for="(item, index) in items" :key="index">{{ item }}</li>
     </ul>

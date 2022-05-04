@@ -5,6 +5,7 @@
         v-for="(item, index) in pages" 
         :key="index"
         @click="currentPage = index + 1"
+        :class="{ activePage: currentPage == index + 1 }"
         >{{ index + 1 }}
       </button>
       <button @click="nextPage()">Вперед</button>
@@ -27,9 +28,11 @@ export default {
      prevPage() {
        if(this.currentPage > 1) this.currentPage--
      },
+
      nextPage() {
        if(this.currentPage < this.pages) this.currentPage++
      },
+
      loadPage(index) {
        console.log(`Завантаження сторінки ${index}`)
      }
@@ -42,3 +45,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  .activePage {
+    background: limegreen;
+  }
+  .b-pagination button:active {
+    background: limegreen;
+  }
+</style>
